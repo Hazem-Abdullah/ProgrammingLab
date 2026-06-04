@@ -1,0 +1,25 @@
+Verona, 37121
+Torino, 10121
+Brescia, 25121
+Reggio Emilia, 42121
+Palermo, 90121
+Bari, 70121
+Bologna, 40121
+Catania, 95121
+Padova, 35121
+Taranto, 74121
+Firenze, 50121
+Livorno, 57121
+Modena, 41121
+Parma, 43121
+Milano, 20121
+Genova, 16121
+Reggio Calabria, 89121
+Udine, 33100
+Perugia, 06121
+Napoli, 80121
+Trieste, 34121
+Venezia, 30121
+Messina, 98121
+Roma, 00118
+Prato, 59100

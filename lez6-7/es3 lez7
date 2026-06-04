@@ -1,0 +1,49 @@
+# Modificate l’oggetto CSVFile della lezione precedente in modo che alzi
+# un'eccezione se il nome del file non è una stringa (nell’ __init__() ).
+# Poi, modificate la funzione get_data() di CSVFile in modo da leggere
+# solo un’ intervallo di righe del file*, aggiungendo gli argomenti start ed
+# end opzionali, controllandone la correttezza e sanitizzandoli se serve.
+
+
+
+class CSV():
+
+    def __init__(self,name):
+
+        if type(name) != str :
+            raise TypeError("il nome del file non è una stringa")
+        self.name = name
+        try:
+            myfile = open(self.name,'r')
+            myfile.readline()
+            myfile.close()
+        except FileNotFoundError:
+            print('file non trovato!')
+            
+
+    def get_data(self, start=None, end=None):
+        
+        if (start != None) and (end != None):
+            if (type(start) == int) and (type(end) == int) :
+                if end >= start >= 1 :
+                    with open(self.name, 'r') as f :
+                        linenum = sum(1 for line in f )
+                    if start > linenum or end > linenum :
+                        raise Exception("L'intervallo è più grande dal numero di righe")
+                else:
+                    raise Exception ("L'intervallo deve iniziare da 1, e lo start deve essere minore uguale dal end ")
+            else:
+                raise TypeError ("I valori dell'intervallo non sono di tipo int")
+            start -= 2
+            print(start)
+
+        myfile = open(self.name,'r')
+        copia = []
+        for line in myfile:
+            if 'Date' not in line :
+                copia.append(line.strip().split(','))
+        copia = copia[start:end]
+        return copia
+
+shampoo = CSV('shampoo_sales.csv')
+print(shampoo.get_data(7,107))

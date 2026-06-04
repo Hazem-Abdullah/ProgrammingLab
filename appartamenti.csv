@@ -1,0 +1,41 @@
+id,titolo,tipo,prezzo
+1,Appartamento trilocale centro,affitto,850
+2,Villa singola lusso,vendita,450000
+3,Monolocale zona università,affitto,450
+4,Loft stile industriale,vendita,210000
+5,Bilocale vista mare,affitto,1200
+6,Garage box auto,vendita,15000
+7,Ufficio open space,affitto,900
+8,Casale in campagna,vendita,320000
+9,Attico panoramico,affitto,2000
+10,Posto auto coperto,affitto,120
+11,Rustico in pietra,vendita,180000
+12,Negozio fronte strada,affitto,1500
+13,Appartamento duplex,vendita,275000
+14,Stanza singola,affitto,350
+15,Magazzino deposito,affitto,600
+16,Villa a schiera,vendita,290000
+17,Mansarda luminosa,affitto,550
+18,Terreno agricolo,vendita,50000
+19,Boutique centro storico,affitto,2200
+20,Appartamento moderno,vendita,195000
+21,Stanza doppia studenti,affitto,300
+22,Capannone industriale,affitto,3500
+23,Villetta bifamiliare,vendita,310000
+24,Bilocale arredato,affitto,700
+25,Garage interrato,vendita,18000
+26,Attico con piscina,vendita,850000
+27,Ufficio rappresentanza,affitto,1800
+28,Casa indipendente,vendita,140000
+29,Monolocale soppalcato,affitto,480
+30,Rustico da ristrutturare,vendita,65000
+31,Appartamento vista lago,affitto,1100
+32,Posto barca,affitto,250
+33,Loft di design,vendita,420000
+34,Chiosco commerciale,affitto,800
+35,Trilocale periferia,vendita,135000
+36,Stanza uso ufficio,affitto,400
+37,Dependance giardino,affitto,650
+38,Villa d'epoca,vendita,1200000
+39,Laboratorio artigianale,affitto,950
+40,Appartamento piano terra,vendita,115000

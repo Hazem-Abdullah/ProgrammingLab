@@ -1,0 +1,30 @@
+# Modificate l’oggetto CSVFile della lezione precedente in modo che stampi a
+# schermo un messaggio di errore* se si cerca di aprire un file non esistente.
+
+
+class CSV():
+
+    def __init__(self,name):
+
+        self.name = name
+        try:
+            myfile = open(self.name,'r')
+            myfile.readline()
+            myfile.close()
+        except FileNotFoundError:
+            print('file non trovato!')
+            
+
+    def get_data(self):
+        
+        myfile = open(self.name,'r')
+        copia = []
+        for line in myfile:
+            # line_pulita = line.strip()
+            if 'Date' not in line :
+                copia.append(line.strip().split(','))
+        return copia
+
+
+shampoo = CSV('shampoo_sales.csv')
+print(shampoo.get_data())
